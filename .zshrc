@@ -132,3 +132,6 @@ unset __conda_setup
 
 # activate my desired default env
 conda activate py3.7_dflt >/dev/null
+
+# set ripgrep config file path
+export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
