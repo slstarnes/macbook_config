@@ -27,6 +27,6 @@ alias cd......="cd ../../../../.."
 alias h='history'
 
 # Conda
-alias "activate=. ~/miniconda3/bin/activate"
-alias "apr=anaconda-project run"
-alias "ap=anaconda-project"
+alias activate=". ~/miniconda3/bin/activate"
+alias apr="anaconda-project run"
+alias ap="anaconda-project"
