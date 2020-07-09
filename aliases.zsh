@@ -7,7 +7,7 @@ alias reload.profile="source ~/.bash_profile"
 alias reload.term="source ~/.bash_profile && source ~/.zshrc"
 
 # Long format list
-alias ll="ls -lhF"
+alias ll="ls -lahF"
 alias la="ls -lhAF"
 alias lal="ls -lhAF | less"
 
@@ -26,3 +26,8 @@ alias cd......="cd ../../../../.."
 
 # History
 alias h='history'
+
+# Conda
+alias "activate=. ~/miniconda3/bin/activate"
+alias "apr=anaconda-project run"
+alias "ap=anaconda-project"
