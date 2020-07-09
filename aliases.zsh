@@ -7,9 +7,8 @@ alias reload.profile="source ~/.bash_profile"
 alias reload.term="source ~/.bash_profile && source ~/.zshrc"
 
 # Long format list
-alias ll="ls -lahF"
-alias la="ls -lhAF"
-alias lal="ls -lhAF | less"
+alias ll="ls -lhAF"
+alias lll="ls -lhAF | less"
 
 # Print my public IP
 alias myip='curl ipinfo.io/ip'
