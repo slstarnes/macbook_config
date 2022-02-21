@@ -30,3 +30,8 @@ alias h='history'
 alias activate=". ~/miniconda3/bin/activate"
 alias apr="anaconda-project run"
 alias ap="anaconda-project"
+
+# GNU SED
+# macos defaults to BSD sed whereas Linux uses GNU sed
+# to install GNU SED - brew install gnu-sed
+alias sed=gsed
