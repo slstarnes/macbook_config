@@ -1,0 +1,5 @@
+command_timeout = 500
+format = '$all'
+
+[status]
+disabled = false
