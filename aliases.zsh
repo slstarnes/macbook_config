@@ -35,3 +35,8 @@ alias ap="anaconda-project"
 # macos defaults to BSD sed whereas Linux uses GNU sed
 # to install GNU SED - brew install gnu-sed
 alias sed=gsed
+
+# Terraform
+alias tf="terraform"
+alias tfplan="terraform plan -out tfplan"
+alias tfapply="terraform apply tfplan"
