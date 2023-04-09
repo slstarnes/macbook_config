@@ -1,19 +1,23 @@
 #!/bin/bash
 
+mkdir -p $HOME/.config
+
 cp .zshrc $HOME/.zshrc
 cp aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
 cp .ripgreprc $HOME/.ripgreprc
+cp starship.toml $HOME/.config/starship.toml
 
 sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 brew install ripgrep
 brew install jq
- brew install z
+brew install z
 # brew install zsh-syntax-highlighting
 brew install gsed
 brew install starship
 brew tap homebrew/cask-fonts
+brew install --cask warp
 
 # https://github.com/Homebrew/homebrew-cask-fonts/tree/master/Casks
 # https://www.nerdfonts.com
