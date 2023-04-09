@@ -1,5 +1,13 @@
 command_timeout = 500
 format = '$all'
 
+# Disable the blank line at the start of the prompt
+add_newline = false
+
 [status]
 disabled = false
+
+[cmd_duration]
+show_notifications = true
+min_time_to_notify = 60_000
+format = '\[🕰️ took [$duration]($style)\]'
