@@ -9,15 +9,16 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 brew install ripgrep
 brew install jq
- brew install z
-# brew install zsh-syntax-highlighting
+# https://github.com/rupa/z
+# brew install z
 brew install gsed
+brew install fzf
 brew install starship
 brew tap homebrew/cask-fonts
 
 # https://github.com/Homebrew/homebrew-cask-fonts/tree/master/Casks
 # https://www.nerdfonts.com
- brew install --cask font-fira-code-nerd-font
+brew install --cask font-fira-code-nerd-font
 
 # git clone https://github.com/agkozak/zsh-z.git ~/.oh-my-zsh/plugins/zsh-z
 # source ~/.oh-my-zsh/plugins/zsh-z/zsh-z.plugin.zsh

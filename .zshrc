@@ -1,7 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/homebrew/bin:$PATH
-export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
+# export PATH=$HOME/homebrew/bin:$PATH
+# export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -71,10 +71,15 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git macos sublime colored-man-pages ripgrep zsh-navigation-tools zsh-interactive-cd kubectl 
-zsh-syntax-highlighting)
+# plugins=(git macos colored-man-pages ripgrep zsh-navigation-tools zsh-interactive-cd kubectl 
+# zsh-syntax-highlighting)
+
+# https://github.com/changyuheng/zsh-interactive-cd
+# https://github.com/z-shell/zsh-navigation-tools
 
 source $ZSH/oh-my-zsh.sh
+
+source $ZSH/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 
 # User configuration
 
@@ -113,7 +118,7 @@ bindkey "^[e" end-of-line
 DEFAULT_USER="$(whoami)"
 
 # Initialize Z
-. `brew --prefix`/etc/profile.d/z.sh
+# . `brew --prefix`/etc/profile.d/z.sh
 
 # eval "$(~/miniconda3/bin/conda shell.zsh hook)" >/dev/null
 # conda init >/dev/null
@@ -121,14 +126,14 @@ DEFAULT_USER="$(whoami)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/ss276/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('$HOME/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/ss276/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/ss276/opt/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "$HOME/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "$HOME/opt/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/ss276/opt/miniconda3/bin:$PATH"
+        export PATH="$HOMEopt/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -142,4 +147,3 @@ export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
 
 # https://starship.rs/guide/#🚀-installation
 eval "$(starship init zsh)"
-
