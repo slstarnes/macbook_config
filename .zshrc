@@ -10,8 +10,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="agnoster"
-# ZSH_THEME=robbyrussell 
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -147,3 +145,15 @@ export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
 
 # https://starship.rs/guide/#🚀-installation
 eval "$(starship init zsh)"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+# To get started you need Poetry's bin directory in your `PATH`
+# environment variable.
+# Add `export PATH="/Users/ss276/.local/bin:$PATH"` to your shell configuration file.
+export PATH="/Users/ss276/.local/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ss276/opt/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ss276/opt/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ss276/opt/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ss276/opt/google-cloud-sdk/completion.zsh.inc'; fi
