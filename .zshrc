@@ -79,6 +79,8 @@ source $ZSH/oh-my-zsh.sh
 
 source $ZSH/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 
+eval "$(fzf --zsh)"
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

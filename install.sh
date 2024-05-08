@@ -2,13 +2,15 @@
 
 mkdir -p $HOME/.config
 
+# Brew is now installed via Enterprise "Self-Service"
+# sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 cp .zshrc $HOME/.zshrc
+cp .zprofile $HOME/.zprofile
 cp aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
 cp .ripgreprc $HOME/.ripgreprc
 cp starship.toml $HOME/.config/starship.toml
-
-sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 brew install ripgrep
 brew install jq
@@ -31,6 +33,7 @@ brew install --cask font-fira-code-nerd-font
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/plugins/zsh-syntax-highlighting
 
 mkdir -p $HOME/iterm2
+cp iterm2_profile.json $HOME/iterm2/iterm2_profile.json
 curl -o ~/iterm2/Snazzy.itermcolors https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Snazzy.itermcolors
 
 read -p "Full Name for Git: " username
