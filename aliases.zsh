@@ -27,7 +27,7 @@ alias cd......="cd ../../../../.."
 alias h='history'
 
 # Conda
-alias activate=". ~/miniconda3/bin/activate"
+# alias activate=". ~/miniconda3/bin/activate"
 alias apr="anaconda-project run"
 alias ap="anaconda-project"
 
@@ -40,3 +40,19 @@ alias sed=gsed
 alias tf="terraform"
 alias tfplan="terraform plan -out tfplan"
 alias tfapply="terraform apply tfplan"
+
+# Micromamba
+# alias conda="micromamba"
+# alias activate="micromamba activate"
+
+# Conda
+# alias activate="conda activate"
+
+# Podman
+alias docker="podman"
+alias podrun="podman run -it --platform linux/amd64"
+
+# Rancher
+alias rk="rancher kubectl"
+
+alias nproc="sysctl -n hw.logicalcpu"
